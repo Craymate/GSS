@@ -287,12 +287,12 @@ Figure 1.3 is our chosen response variable, feelings of life. The mean and media
 Figure 1.4 is the distribution of number of children, and there is also a right skew to this data, reflected in the means and medians being 1.68 and 2 respectively. This does fit with the consensus that in more developed countries people tend to have less children (due to their being a less economical need for a larger family).
 
 
-#Conclusion 
+# Conclusion 
 
 There’s a positive effect that all these variables have on feelings of life. The skew of the histograms didn’t indicate any particular relation.
 
 
-# References:
+# References
 - Baptiste Auguie (2017). gridExtra: Miscellaneous Functions for "Grid" Graphics. R package version 2.3.
   https://CRAN.R-project.org/package=gridExtra
 - Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686,
