@@ -44,8 +44,6 @@ The variables of interest in this study:
 · Age\
 · Income\
 · Number of children\
- 
-https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=335816
 
 
 # Modelling
@@ -256,6 +254,9 @@ grid.arrange(fig2.1, fig2.2, fig2.3, layout_matrix = rbind(c(1), c(2,3)))
 
 mod <- lm(feelings_life ~ age + income_respondent + total_children, gss)
 
+```
+```{r reg-stats, echo=FALSE}
+
 summ <- cbind(anova(mod)[1], round(anova(mod)[2:4], 2), anova(mod)[5])
 
 res <- data.frame(
@@ -289,7 +290,7 @@ Figure 1.4 is the distribution of number of children, and there is also a right 
 
 # Conclusion 
 
-There’s a positive effect that all these variables have on feelings of life. The skew of the histograms didn’t indicate any particular relation.
+
 
 
 # References
