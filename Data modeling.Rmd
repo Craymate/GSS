@@ -315,24 +315,37 @@ In order to test for normality in the data provided in the sample data, we used 
   There is also the possibility of many lurking variables—for instance, it has been shown through various studies, such as one by G. Nargund, that more developed countries, which tend to have higher incomes for their populations, tend to have lower children for causes having to do with better access to contraceptives, more education and lifestyles associated with greater economic standing. Thus, it may not be the number of children as an explanatory variable for feelings of happiness, and it may be that income affects both the number of children as well as feelings of happiness.
 
 
+Supporting code can be found at: https://github.com/Craymate/GSS.
+
+
 # References
 
 - Baptiste Auguie (2017). gridExtra: Miscellaneous Functions for "Grid" Graphics. R
   package version 2.3. https://CRAN.R-project.org/package=gridExtra
-- R Core Team (2019). R: A language and environment for statistical computing. R
-  Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
-- Government of Canada, Statistics Canada. “How's Life in the City? Life Satisfaction Across Census Metropolitan Areas and Economic Regions in Canada.” Government of Canada, 
+- https://github.com/Craymate/GSS/blob/main/Script/gss_cleaning-1.R
+- Government of Canada, Statistics Canada. “How's Life in the City? Life Satisfaction Across Census Metropolitan Areas and Economic Regions in Canada.” Government of Canada, URL https://www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2015046-eng.html 
+- JJ Allaire and Yihui Xie and Jonathan McPherson and Javier Luraschi and Kevin Ushey and
+  Aron Atkins and Hadley Wickham and Joe Cheng and Winston Chang and Richard Iannone
+  (2020). rmarkdown: Dynamic Documents for R. R package version 2.3. URL
+  https://rmarkdown.rstudio.com.
 - Luscombe, Belinda. “Do We Need $75,000 a Year to Be Happy?” Time, Time Inc., 6 Sept. 2010, content.time.com/time/magazine/article/0,9171,2019628,00.html. 
 - Nargund, G. “Declining birth rate in Developed Countries: A radical policy re-think is required.” 
   Facts, views & vision in ObGyn vol. 1,3 (2009): 191-3.
+- R Core Team (2019). R: A language and environment for statistical computing. R
+  Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
 - Statistics Canada, 27 Nov. 2015, www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2015046-eng.htm. 
 - Sachs, Jeffrey D., et al. “World Happiness Report Finds That People Are Feeling Worse.” Greater Good, greatergood.berkeley.edu/article/item/world_happiness_report_finds_that_people_are_feeling_worse. 
+- Sam Firke (2020). janitor: Simple Tools for Examining and Cleaning Dirty Data. R
+  package version 2.0.1. https://CRAN.R-project.org/package=janitor
 - Sifferlin, Alexandra. “Here's How Happy Americans Are Right Now: Harris Poll.” Time, Time, 26 July 2017, time.com/4871720/how-happy-are-americans/.
 - Statistics Canada. “ Canadian General Social Survey - Family (GSS) 2017.” Statistics Canada, Sept. 2019, https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=335816.
 - Twenge, Jean M., et al. “More Happiness for Young People and Less for Mature Adults: Time Period Differences in Subjective Well-Being in the United States, 1972–2014.” Social Psychological and Personality Science, vol. 7, no. 2, Mar. 2016, pp. 131–141, doi:10.1177/1948550615602933.https://journals.sagepub.com/doi/10.1177/1948550615602933
 - Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software,
   4(43), 1686, https://doi.org/10.21105/joss.01686
-
+- Yihui Xie and J.J. Allaire and Garrett Grolemund (2018). R Markdown: The Definitive
+  Guide. Chapman and Hall/CRC. ISBN 9781138359338. URL
+  https://bookdown.org/yihui/rmarkdown.
+  
 
 # Appendix
 
