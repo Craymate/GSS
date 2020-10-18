@@ -339,8 +339,9 @@ $$ \text{Feelings of Life} = 7.647 + 1.559e^{-3}\times\text{age} + 4.987e^{-6}\t
 
 - Baptiste Auguie (2017). gridExtra: Miscellaneous Functions for "Grid" Graphics. R
   package version 2.3. https://CRAN.R-project.org/package=gridExtra
+- Data Preparation:
+  https://github.com/Craymate/GSS/blob/main/Script/gss_cleaning-1.R
 - Government of Canada, Statistics Canada. “How's Life in the City? Life Satisfaction Across Census Metropolitan Areas and Economic Regions in Canada.” Government of Canada, URL https://www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2015046-eng.html 
-- https://github.com/Craymate/GSS/blob/main/Script/gss_cleaning-1.R
 - JJ Allaire and Yihui Xie and Jonathan McPherson and Javier Luraschi and Kevin Ushey and
   Aron Atkins and Hadley Wickham and Joe Cheng and Winston Chang and Richard Iannone
   (2020). rmarkdown: Dynamic Documents for R. R package version 2.3. URL
