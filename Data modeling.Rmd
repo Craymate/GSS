@@ -22,7 +22,8 @@ output:
 
 # Introduction
 
-  Overall world happiness is on a decline, particularly in the US, Latin America, Asia and Sub-Saharan Africa(Newman, 2019).  In addition to the global trend of negative thoughts, life satisfaction seems to be highly divided, evidenced in a widening happiness gap and life satisfaction inequality.  Studies are showing a rise in negative feelings, including emotions derived from worry, sadness and anger, by 37 percent from 2010 to 2018.  Happiness and enjoying life are often compromised by the course of life for many, which is often just accepted as a part of living.  So how do certain countries maintain overall happiness and life satisfaction more than others?  Adolescents living in the US are reportedly experiencing greater amounts of depression, suicidal thoughts and self-harm since 2010 (Twenge et. Al, 2015).  In addition, income inequality has been shown to contribute to the growing happiness gap.\
+  Overall world happiness is on a decline, particularly in the US, Latin America, Asia and Sub-Saharan Africa(Newman, 2019).  In addition to the global trend of negative thoughts, life satisfaction seems to be highly divided, evidenced in a widening happiness gap and life satisfaction inequality.  Studies are showing a rise in negative feelings, including emotions derived from worry, sadness and anger, by 37 percent from 2010 to 2018.  Happiness and enjoying life are often compromised by the course of life for many, which is often just accepted as a part of living.  So how do certain countries maintain overall happiness and life satisfaction more than others?  Adolescents living in the US are reportedly experiencing greater amounts of depression, suicidal thoughts and self-harm since 2010 (Twenge et. Al, 2015).  In addition, income inequality has been shown to contribute to the growing happiness gap.
+
   This paper analyzes Canadian data from the Canadian GSS from 2017 to crack down on the cause for inequalities in life satisfaction and outlook based on age, income and number of children.  This study has found a positive relationship between income and feelings of life, although most respondents were reported to be within the lowest two income brackets.  The number of children and feelings of life were positively correlated from having 0 to 2 children, whereas any more children showed an oscillating pattern but overall did not decrease. The relationship between age and feelings of life were initially high, with a minimum age of 15 years old.  However, feelings of life sharply declined right and hit a minimum at around 23 and slowly inclined as age increased.  Based on these conclusions, we recognize that there may be different existing factors to explore.  Considering that individuals around 20 years old have the lowest reported feeling of life, it may be beneficial to study different aspects of 20 year-olds lives, such as education, occupation, geographic location and debt.  To acknowledge the growing issue of happiness inequality, it also may be beneficial to explore information about individuals with the highest reported feelings of life with the lowest reported feelings and life.
 
 
@@ -38,21 +39,27 @@ library(tidyverse)
 
 # Data
 
-The dataset was obtained from the Canadian General Social Survey (GSS) conducted on an annual basis by Statistics Canada for the purpose of monitoring changes in living conditions and well-being of individuals across Canada as well as providing information on social policy issues of interest during the year the study was conducted.   Data from the 2017 iteration of the GSS (Cycle 31) was analyzed.  The content of the survey focuses on different aspects over time - the 2017 GSS featured notable changes involving redesigning childcare services, childcare arrangements, child custody and financial support and programs after a separation or a divorce, expanding modules on parents and grandparents and removing module on work history.  The targeted population in the survey was all non-institutionalized persons older than the age of 15 living in any of the 10 provinces of Canada.
-  The survey design employed was stratified cross-sectional sampling.  Stratification was conducted at the province/census metropolitan area level and the frames were constructed  from telephone numbers.\
-  In order to increase response-rates on income, personal income questions were not included in the 2017 GSS.  Instead, income information was obtained through tax data for those who chose to respond.  Based on given personal tax records, household information, social insurance number and other key variables, linkages were formed to obtain income information.\
+  The dataset was obtained from the Canadian General Social Survey (GSS) conducted on an annual basis by Statistics Canada for the purpose of monitoring changes in living conditions and well-being of individuals across Canada as well as providing information on social policy issues of interest during the year the study was conducted.   Data from the 2017 iteration of the GSS (Cycle 31) was analyzed.  The content of the survey focuses on different aspects over time - the 2017 GSS featured notable changes involving redesigning childcare services, childcare arrangements, child custody and financial support and programs after a separation or a divorce, expanding modules on parents and grandparents and removing module on work history.  The targeted population in the survey was all non-institutionalized persons older than the age of 15 living in any of the 10 provinces of Canada.
+
+  The survey design employed was stratified cross-sectional sampling.  Stratification was conducted at the province/census metropolitan area level and the frames were constructed  from telephone numbers.
+
+  In order to increase response-rates on income, personal income questions were not included in the 2017 GSS.  Instead, income information was obtained through tax data for those who chose to respond.  Based on given personal tax records, household information, social insurance number and other key variables, linkages were formed to obtain income information.
 The variables of interest in this study:
-\
+
 · Age\
 · Income\
-· Number of children\
+· Number of children
 
   The age distribution shown in figure 1.1 of the observations in the dataset are bimodal with two peaks centered at 35 years old and 65 years old.  Most of the respondents in the study were around the ages of 35 and 65.  The sample mean was 52.2 years and the median was 54.2 years.  The range of ages obtained in the study are from 15 years to 80 years.
 About 2/3rds of the respondents had reported income levels between $0 - $50,000, which is shown in Figure 1.2.  Median income level was 45,775.29 Canadian dollars where the median was at 37,500 Canadian dollars.  The incomes ranged from 0 to 125,000, however, observations in the $125,000 income bracket had an uncapped amount for their income.
-Around 1/3rd of individuals reported having 0 children and 1/3rd responded having 2 children.  Most of the observations were drawn from individuals who were above the age of 20, where most people start making families and having children.  The majority of individuals had equal to or less than 2 children.
-The age distribution shown in figure 1.1 of the observations in the dataset are bimodal with two peaks centered at 35 years old and 65 years old.  Most of the respondents in the study were around the ages of 35 and 65.  The sample mean was 52.2 years and the median was 54.2 years.  The range of ages obtained in the study are from 15 years to 80 years.
-About 2/3rds of the respondents had reported income levels between $0 - $50,000, which is shown in Figure 1.2.  Median income level was 45,775.29 Canadian dollars where the median was at 37,500 Canadian dollars.  The incomes ranged from 0 to 125,000, however, observations in the $125,000 income bracket had an uncapped amount for their income.
-Around 1/3rd of individuals reported having 0 children and 1/3rd responded having 2 children.  Most of the observations were drawn from individuals who were above the age of 20, where most people start making families and having children.  The majority of individuals had equal to or less than 2 children.
+
+  Around 1/3rd of individuals reported having 0 children and 1/3rd responded having 2 children.  Most of the observations were drawn from individuals who were above the age of 20, where most people start making families and having children.  The majority of individuals had equal to or less than 2 children.
+
+  The age distribution shown in figure 1.1 of the observations in the dataset are bimodal with two peaks centered at 35 years old and 65 years old.  Most of the respondents in the study were around the ages of 35 and 65.  The sample mean was 52.2 years and the median was 54.2 years.  The range of ages obtained in the study are from 15 years to 80 years.
+
+  About 2/3rds of the respondents had reported income levels between $0 - $50,000, which is shown in Figure 1.2.  Median income level was 45,775.29 Canadian dollars where the median was at 37,500 Canadian dollars.  The incomes ranged from 0 to 125,000, however, observations in the $125,000 income bracket had an uncapped amount for their income.
+
+  Around 1/3rd of individuals reported having 0 children and 1/3rd responded having 2 children.  Most of the observations were drawn from individuals who were above the age of 20, where most people start making families and having children.  The majority of individuals had equal to or less than 2 children.
 
 
 # Modelling
@@ -232,10 +239,10 @@ fig2.1 <- gss %>%
   labs(x = "Age", y = "Feeling of Life", title = "Figure2.1: Age vs. Feeling of Life") + 
   theme(plot.title = element_text(hjust = 0.5))
 
-#Age can be plotted without mean, because ages are more consistent. Other variables
+#Age can be plotted without means, because ages are more consistent. Other variables
 #would produce error when plotting smooth line.
 
-#So we plotted these two plot by using mean for each group, might be useful.
+#So we plotted these two plots by using mean for each group.
 
 fig2.2 <- gss_income %>%
   ggplot(aes(y = mean_feel, x = income_respondent)) + geom_smooth(stat='identity') + 
@@ -260,14 +267,20 @@ grid.arrange(fig2.1, fig2.2, fig2.3, layout_matrix = rbind(c(1), c(2,3)))
 mod <- lm(feelings_life ~ age + income_respondent + total_children, gss)
 
 ```
+
 ```{r reg-stats, include=FALSE}
 
 summ <- cbind(anova(mod)[1], round(anova(mod)[2:4], 2), anova(mod)[5])
 
 res <- data.frame(
   row.names = paste(c("Min", "1st Quantile", "Median", "3rd Quantile", "Max")))
-res[,1] <- round(quantile(mod$residuals), 4)
+res[,1] <- signif(quantile(mod$residuals), 4)
 colnames(res) <- c("Value of Regression Residuals")
+
+coe <- data.frame(
+  row.names = paste(c("(Intercept)", "age", "income", "number of children"))) 
+coe[,1] <- signif(mod$coefficients, 4)
+colnames(coe) <- c("Regression Coefficients")
 
 ```
 
@@ -303,19 +316,23 @@ plot(mod)
 
 $$ \text{Feelings of Life} = 7.647 + 1.559e^{-3}\times\text{age} + 4.987e^{-6}\times\text{income} + 8.223e^{-2} \times\text{number of children} $$
 
-  This shows that there is a positive relationship between all three variables, and the response variable of “feelings of life”. We must note that this is only really valid for incomes less than $125,000 (because we don’t have specific information for income brackets above that one).\
-In the linear regression models for each variable shown in figures 2.1, 2.2, and 2.3, each variable had p-values below the alpha value of 0.05, providing strong evidence for a relationship between the variables investigated and feelings of life in Canada.\
-In order to test for normality in the data provided in the sample data, we used a normal QQ-Plot which plots the observations from the data against data found in a normal distribution. A straight line should form id the data roughly follows a normal distribution.  In the Normal QQ-Plot, lower values show more variance as the values fall below the dotted line.
+  This shows that there is a positive relationship between all three variables, and the response variable of “feelings of life”. We must note that this is only really valid for incomes less than $125,000 (because we don’t have specific information for income brackets above that one).
+  
+  In the linear regression models for each variable shown in figures 2.1, 2.2, and 2.3, each variable had p-values below the alpha value of 0.05, providing strong evidence for a relationship between the variables investigated and feelings of life in Canada.
+
+  In order to test for normality in the data provided in the sample data, we used a normal QQ-Plot which plots the observations from the data against data found in a normal distribution. A straight line should form id the data roughly follows a normal distribution.  In the Normal QQ-Plot, lower values show more variance as the values fall below the dotted line.
 
 
 ## Weaknesses and Next Steps
 
   In general, income information collected through surveys usually receive low response rates to the sensitivity of the subject of income.  In the 2017 iteration of the Canadian GSS, income information was collected through linkages from tax survey questions, social insurance information and other key variables to estimate which income bracket a respondent belonged to.  Considering that income data was organized into brackets, individuals are placed into categories, rather than having income as a discrete variable.
-  In addition, Canada has been ranked 9th on the world’s top happiest countries (World Happiness Report, 2019). The median feelings of life of the sample was 8 while the mean was 8.1 out of a scale of ten.  Out of the observations in the sample, it appears that most of the respondents were on the “happier” side and had greater feelings of life.  Therefore, it may be helpful to compare Canada’s results to other countries who are lower on the happiness scale to find more about what causes greater gaps of satisfaction and happiness.  
+  
+  In addition, Canada has been ranked 9th on the world’s top happiest countries (World Happiness Report, 2019). The median feelings of life of the sample was 8 while the mean was 8.1 out of a scale of ten.  Out of the observations in the sample, it appears that most of the respondents were on the “happier” side and had greater feelings of life.  Therefore, it may be helpful to compare Canada’s results to other countries who are lower on the happiness scale to find more about what causes greater gaps of satisfaction and happiness. 
+  
   There is also the possibility of many lurking variables—for instance, it has been shown through various studies, such as one by G. Nargund, that more developed countries, which tend to have higher incomes for their populations, tend to have lower children for causes having to do with better access to contraceptives, more education and lifestyles associated with greater economic standing. Thus, it may not be the number of children as an explanatory variable for feelings of happiness, and it may be that income affects both the number of children as well as feelings of happiness.
 
 
-Supporting code can be found at: https://github.com/Craymate/GSS.
+  Supporting code can be found at: https://github.com/Craymate/GSS.
 
 
 # References
@@ -354,6 +371,7 @@ Supporting code can be found at: https://github.com/Craymate/GSS.
 ```{r tables, echo=FALSE}
 
 grid.arrange(tableGrob(stat), top = "Table 1: Summary of Variables", ncol = 1)
-grid.arrange(tableGrob(summ), tableGrob(res), ncol=1, top = "Table 2: Regression Statistics")
+grid.arrange(tableGrob(coe), ncol=1, top = "Table 2: Regression Coefficients")
+grid.arrange(tableGrob(summ), tableGrob(res), ncol=1, top = "Table 3: Regression Statistics")
 
 ```
