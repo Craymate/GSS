@@ -339,8 +339,6 @@ $$ \text{Feelings of Life} = 7.647 + 1.559e^{-3}\times\text{age} + 4.987e^{-6}\t
 
 - Baptiste Auguie (2017). gridExtra: Miscellaneous Functions for "Grid" Graphics. R
   package version 2.3. https://CRAN.R-project.org/package=gridExtra
-- Data Preparation:
-  https://github.com/Craymate/GSS/blob/main/Script/gss_cleaning-1.R
 - Government of Canada, Statistics Canada. “How's Life in the City? Life Satisfaction Across Census Metropolitan Areas and Economic Regions in Canada.” Government of Canada, URL https://www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2015046-eng.html 
 - JJ Allaire and Yihui Xie and Jonathan McPherson and Javier Luraschi and Kevin Ushey and
   Aron Atkins and Hadley Wickham and Joe Cheng and Winston Chang and Richard Iannone
@@ -351,6 +349,8 @@ $$ \text{Feelings of Life} = 7.647 + 1.559e^{-3}\times\text{age} + 4.987e^{-6}\t
   Facts, views & vision in ObGyn vol. 1,3 (2009): 191-3.
 - R Core Team (2019). R: A language and environment for statistical computing. R
   Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
+- Rohan Alexander and Sam Caetano. Data Preparation:
+  https://github.com/Craymate/GSS/blob/main/Script/gss_cleaning-1.R
 - Statistics Canada, 27 Nov. 2015, www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2015046-eng.htm. 
 - Sachs, Jeffrey D., et al. “World Happiness Report Finds That People Are Feeling Worse.” Greater Good, greatergood.berkeley.edu/article/item/world_happiness_report_finds_that_people_are_feeling_worse. 
 - Sam Firke (2020). janitor: Simple Tools for Examining and Cleaning Dirty Data. R
